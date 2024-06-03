@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--in hear i am using the tailwindcss link for the better css-->>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-white text-lg font-semibold">My Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="text-white hover:text-gray-300">About Me</a></li>
+                <li><a href="#profile" class="text-white hover:text-gray-300">Profile</a></li>
+                <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
+                <li><a href="#skills" class="text-white hover:text-gray-300">Skills</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="profile" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <img src="first.jpg"alt="Profile Photo" class="mx-auto rounded-full w-32 h-32 mb-4">
+            <h1 class="text-4xl font-semibold">Purna Sai </h1>
+            <p class="mt-4 text-lg">Computer Science Student</p>
+        </div>
+    </header>
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">About Me</h2>
+            <ul>
+                <li><strong>Name:</strong> <span class="name">Purna Sai</span></li>
+                <li><strong>Age:</strong> <span class="age">21</span> years old</li>
+                <li><strong>Location:</strong> <span class="location">Narsipatnam</span></li>
+                <li><strong>Education Status:</strong> <span class="education-status">B.Tech</span></li>
+                <li><strong>College:</strong> <span class="college">Krishna University of Engineering and Technology</span></li>
+                <li><strong>City:</strong> <span class="city">Machilipatnam</span></li>
+            </ul>
+            <p class="text-lg">
+                Hello everyone! I'm <span class="name">Purna sai</span> from <span class="location">Narsipatnam</span>, Narsipatnam is a census town in Anakapalle district  of the Indian state of Andhra Pradesh. It  was upgrated from grama panchayat into municipality in 2012. the town is spread over an area of 42 km. The resting place of the revolutionary Indian freedom fighter Alluri Sitarama Raju is located in Krishna Devi Peta village of From Narsipatnam to labasing most popular winter tourism place...so many Tourists enjoy  -2 degree's temperature there... Narsipatnam town is 43 km away from Tuni and it is 72 km away from Visakhapatnam. Currently, I am pursuing my <span class="education-status">B.Tech</span> at <span class="college">Krishna University of Engineering and Technology</span> in <span class="city">Machilipatnam</span>. I am a passionate Computer Science student with a keen interest in web development. I enjoy learning new technologies and exploring different programming languages. In my free time, I like to work on personal projects and contribute to open-source communities.
+            </p>
+        </div>
+    </section>
+    <section id="projects" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">portfolio</h3>
+                    <p>In this project, I have provided information about myself. You can go through it to learn more about me.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <a href="calculator.html" class="text-black no-underline">
+                        <h3 class="text-xl font-semibold mb-2">Calculator</h3>
+                        <p>The project is based on a simple calculator that performs basic arithmetic operations. For more details, please check it out.</p>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <a href="whether.html" class="text-black no-underline">
+                        <h3 class="text-xl font-semibold mb-2">whether project</h3>
+                        <p>This project will displays the actual whether of the city you entered.</p>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <a href="movie/index.html" class="text-black no-underline">
+                        <h3 class="text-xl font-semibold mb-2">movies</h3>
+                        <p>hear you watch & download the movies know updates fron events..</p>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <a href="movie/music player.html" class="text-black no-underline">
+                        <h3 class="text-xl font-semibold mb-2">Music player</h3>
+                        <p>hear you can hear and dowloade the music for the movies from this site......</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-8">Skills</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <li class="bg-white rounded-lg p-4 shadow-md">HTML</li>
+                <li class="bg-white rounded-lg p-4 shadow-md">CSS</li>
+                <li class="bg-white rounded-lg p-4 shadow-md">JavaScript</li>
+                <li class="bg-white rounded-lg p-4 shadow-md">java</li>
+                <li class="bg-white rounded-lg p-4 shadow-md">python</li>
+            </ul>
+        </div>
+    </section>
+
+    <form id="contact-form" class="py-8 bg-gray-800 text-white" action="send-email.php" method="POST">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold mb-4">Send a message</h2>
+            <div class="form-group mb-4">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" name="name" id="name" class="bg-gray-700 text-white py-2 px-4 rounded-lg w-full" placeholder="Name" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" name="email" id="email" class="bg-gray-700 text-white py-2 px-4 rounded-lg w-full" placeholder="Email" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" id="message" class="bg-gray-700 text-white py-2 px-4 rounded-lg w-full h-32" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg">Send</button>
+        </div>
+    </form>
+
+    <footer id="contact" class="py-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <p>Email:purnasai028@gmail.com@gmail.com</p>
+            <p>Phone:6300387671</p>
+            <div class="mt-4">
+                <a href="https://github.com/Gangaprasad8822" class="text-white hover:text-gray-300 mr-4"><b>LinkedIn</b></a>
+                <a href="https://github.com/Gangaprasad8822" class="text-white hover:text-gray-300"><b>GitHub</b></a>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+
+</html>
